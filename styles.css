@@ -1,0 +1,1467 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ff0033;
+    box-shadow: 0 4px 10px rgba(255, 0, 51, 0.2);
+}
+
+.logo h1 {
+    font-size: 2rem;
+    color: #ff0033;
+}
+
+.logo p {
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff0033;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(135deg, #1a1a1a, #0e0e0e);
+    padding: 80px 40px;
+    text-align: center;
+    box-shadow: inset 0 -2px 6px rgba(255, 0, 51, 0.3);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    color: #ff0033;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Secciones */
+section {
+    padding: 60px 40px;
+    border-bottom: 1px solid #222;
+}
+
+section h2 {
+    font-size: 1.8rem;
+    color: #ff0033;
+    margin-bottom: 20px;
+}
+
+section p {
+    color: #ddd;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.music-card {
+    background-color: #1a1a1a;
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(255, 0, 51, 0.1);
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.music-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 51, 0.3);
+}
+
+.music-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.music-card h3 {
+    color: #ff0033;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.music-card p {
+    color: #ccc;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #777;
+    border-top: 2px solid #ff0033;
+}
+.galeria {
+    padding: 60px 40px;
+    background-color: #0e0e0e;
+    text-align: center;
+}
+
+.galeria h2 {
+    font-size: 2rem;
+    color: #ff0033;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 51, 0.4);
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer .social-links {
+    margin-top: 10px;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #ff0033;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+/* --- Reset básico y tipografía --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* --- Contenedor general --- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- Encabezado --- */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff0033;
+    box-shadow: 0 4px 10px rgba(255, 0, 51, 0.1);
+}
+
+header h1 {
+    color: #ff0033;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* --- Sección genérica --- */
+section {
+    padding: 60px 20px;
+}
+
+/* --- Galería --- */
+.galeria h2 {
+    text-align: center;
+    color: #ff0033;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 51, 0.4);
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+/* --- Spotify embed --- */
+.spotify-player {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.spotify-player iframe {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+.footer .social-links {
+    margin-top: 10px;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #ff0033;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+}
+
+/* --- Botón flotante WhatsApp --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Responsive ajustes --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .galeria h2 {
+        font-size: 1.5rem;
+    }
+}
+/* --- Reset básico y tipografía --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* --- Contenedor general --- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- Encabezado --- */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff0033;
+    box-shadow: 0 4px 10px rgba(255, 0, 51, 0.1);
+}
+
+header h1 {
+    color: #ff0033;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* --- Sección genérica --- */
+section {
+    padding: 60px 20px;
+}
+
+/* --- Galería --- */
+.galeria h2 {
+    text-align: center;
+    color: #ff0033;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 51, 0.4);
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+/* --- Spotify embed --- */
+.spotify-player {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.spotify-player iframe {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+.footer .social-links {
+    margin-top: 10px;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #ff0033;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+}
+
+/* --- Botón flotante WhatsApp --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Responsive ajustes --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .galeria h2 {
+        font-size: 1.5rem;
+    }
+}
+/* --- Reset básico y tipografía --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* --- Contenedor general --- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- Encabezado --- */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff0033;
+    box-shadow: 0 4px 10px rgba(255, 0, 51, 0.1);
+}
+
+header h1 {
+    color: #ff0033;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* --- Sección genérica --- */
+section {
+    padding: 60px 20px;
+}
+
+/* --- Galería --- */
+.galeria h2 {
+    text-align: center;
+    color: #ff0033;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 51, 0.4);
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+/* --- Spotify embed --- */
+.spotify-player {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.spotify-player iframe {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+.footer .social-links {
+    margin-top: 10px;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #ff0033;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+}
+
+/* --- Botón flotante WhatsApp --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Responsive ajustes --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .galeria h2 {
+        font-size: 1.5rem;
+    }
+}
+/* --- Reset básico y tipografía --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0e0e0e;
+    color: #f1f1f1;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* --- Contenedor general --- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* --- Encabezado --- */
+header {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff0033;
+    box-shadow: 0 4px 10px rgba(255, 0, 51, 0.1);
+}
+
+header h1 {
+    color: #ff0033;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #ccc;
+    font-size: 1rem;
+}
+
+/* --- Sección genérica --- */
+section {
+    padding: 60px 20px;
+}
+
+/* --- Galería --- */
+.galeria h2 {
+    text-align: center;
+    color: #ff0033;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.foto {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px;
+}
+
+.foto img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(255, 0, 51, 0.4);
+}
+
+.foto:hover img {
+    transform: scale(1.05);
+}
+
+/* --- Spotify embed --- */
+.spotify-player {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.spotify-player iframe {
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(255, 0, 51, 0.2);
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 0.9rem;
+    border-top: 1px solid #222;
+}
+
+.footer .social-links {
+    margin-top: 10px;
+}
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #ff0033;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+    color: #fff;
+}
+
+/* --- Botón flotante WhatsApp --- */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+
+/* --- Responsive ajustes --- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .galeria h2 {
+        font-size: 1.5rem;
+    }
+}
+ .audios{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.audios {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #111; /* Fondo oscuro */
+}
+
+.audios h2 {
+    font-size: 2.2rem;
+    color: #2ecc71; /* Verde fuerte */
+    margin-bottom: 30px;
+}
+
+.audio-player {
+    background-color: #1b1b1b;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 900px; /* Más ancho para mayor visibilidad */
+    box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.audio-player:hover {
+    transform: scale(1.02);
+}
+
+
+.audio-title {
+    font-size: 1.2rem;
+    color: #2ecc71;
+    margin-bottom: 10px;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+}
+
+.audio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.audio-player {
+    background-color: #1b1b1b;
+    padding: 20px;
+    border-radius: 10px;
+    width: 280px; /* Puedes ajustar esto */
+    box-shadow: 0 4px 20px rgba(0, 255, 128, 0.2);
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.audio-player:hover {
+    transform: scale(1.03);
+}
+
+.audio-player p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.social-links a {
+    color: #00ff99;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #ffffff;
+  }
+  
+  .whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+  }
+  section h2 i {
+    margin-right: 8px;
+    color: #00ff99;
+  }
+  
+  .audio-player p {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #00ff99;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  
+  button i {
+    margin-right: 6px;
+  }
+  .contato {
+    background: #1a1a1a;
+    color: #fff;
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  .contato h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff4c4c;
+  }
+  
+  .contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contato input,
+  .contato textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #2b2b2b;
+    color: #fff;
+    box-shadow: inset 0 0 5px rgba(255, 0, 0, 0.2);
+  }
+  
+  .contato input:focus,
+  .contato textarea:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  }
+  
+  .contato button {
+    background-color: #ff4c4c;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contato button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  
+  .contato input,
+  .contato textarea,
+  .contato button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .contato textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  .contato button {
+    background-color: #00ff99;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contato button:hover {
+    background-color: #00cc7a;
+  }
+  .sobre {
+    background: linear-gradient(to right, #0a0a0a, #1a1a1a);
+    padding: 60px 20px;
+    color: #eee;
+    text-align: center;
+  }
+  
+  .container-sobre {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0, 255, 120, 0.2);
+  }
+  
+  .sobre h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00ff99;
+  }
+  
+  .sobre p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ccc;
+  }
+  .festivais {
+    background: #0d0d0d;
+    padding: 60px 20px;
+    text-align: center;
+    color: #eee;
+  }
+  
+  .festivais h2 {
+    font-size: 2.2rem;
+    margin-bottom: 40px;
+    color: #00ff99;
+  }
+  
+  .festivais-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .festival-card {
+    background: #141414;
+    border: 1px solid #222;
+    padding: 20px 30px;
+    border-radius: 12px;
+    width: 280px;
+    box-shadow: 0 0 20px rgba(0, 255, 120, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .festival-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px rgba(0, 255, 120, 0.25);
+  }
+  
+  .festival-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #00ff99;
+  }
+  
+  .festival-card a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .festival-card a:hover {
+    color: #00ff99;
+  }
+  .hero {
+    position: relative;
+    background-image: url('img/44128916_722508071454597_4947187551963185152_n.jpg'); /* Asegúrate de tener esta imagen en tu carpeta /img */
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Oscurece un poco el fondo para que el texto resalte */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  .hero-content h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00ff99; /* Cambia esto a #ff0044 si quieres rojo */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero-content p {
+    font-size: 1.4rem;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Animación suave */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .musica-background {
+    position: relative;
+    background-image: url('img/ursa-major-ursa-minor-constellations.jpg'); /* Pon aquí una imagen real tuya tocando o de ambiente psicodélico */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: #fff;
+  }
+  
+  .musica-overlay {
+    background-color: rgba(0, 0, 0, 0.75); /* Oscurece para mejor contraste */
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .music-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 12px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+  }
+  
+  .music-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .music-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+ /* Otros estilos previos aquí... */
+
+/* Sección Audios */
+/* Sección Audios */
+.audios {
+    margin-top: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .audio-player {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro con opacidad */
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.6); /* Sombra verde */
+    transition: box-shadow 0.3s ease-in-out; /* Transición suave para el hover */
+  }
+  
+  .audio-player:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 0, 0.9); /* Sombra verde más intensa al pasar el mouse */
+  }
+  
+  .audio-player p {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .soundcloud-sets {
+    background-color: #0f0f0f;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .soundcloud-sets h2 {
+    font-size: 2rem;
+    color: #1ed760; /* Verde Spotify */
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .soundcloud-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .soundcloud-card {
+    background-color: #181818;
+    border-radius: 16px;
+    padding: 20px;
+    width: 340px;
+    box-shadow: 0 0 25px 4px rgba(30, 215, 96, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .soundcloud-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px 8px rgba(30, 215, 96, 0.7);
+  }
+  
+  .soundcloud-card h3 {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+  
+  .soundcloud-card iframe {
+    border-radius: 8px;
+  }
+  .footer {
+    background: linear-gradient(135deg, #111, #1a1a1a);
+    color: #ccc;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #1db954;
+    box-shadow: 0 -2px 10px rgba(0, 255, 128, 0.2);
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer p {
+    margin: 0 0 20px;
+    font-size: 15px;
+    color: #aaa;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .social-links a {
+    color: #ccc;
+    font-size: 24px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #1db954; /* Verde tipo Spotify */
+    transform: scale(1.2);
+  }
+  .download-btn-container {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .btn-download {
+    display: inline-block;
+    background-color: #1db954;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(29, 185, 84, 0.6);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .btn-download:hover {
+    background-color: #17a84b;
+    box-shadow: 0 0 25px rgba(29, 185, 84, 0.8);
+    transform: translateY(-2px);
+  }
+    
+  /* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .music-card {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+  
+    .hero h2 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.2rem;
+    }
+  
+    .audios {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .audio-player {
+      width: 80%;
+      margin-bottom: 15px;
+    }
+  
+    .contato input, .contato textarea {
+      width: 80%;
+    }
+  
+    .contato button {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero h2 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .card-container {
+      flex-direction: column;
+    }
+  
+    .music-card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .audios {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .audio-player {
+      width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .contato input, .contato textarea, .contato button {
+      width: 90%;
+    }
+  }
+  /* Estilo para la sección de logos */
+.logos {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.logos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño de los logos */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efecto al pasar el ratón */
+}
